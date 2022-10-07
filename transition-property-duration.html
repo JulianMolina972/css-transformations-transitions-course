@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #353535;
+    }
+    .container1, .container2, .container3, .container4 {
+      background: papayawhip;
+      width: 400px;
+      height: 100px;
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      margin: 20px;
+    
+    }
+
+    .container1:hover .box{
+      transform: scale(1.2);
+    }
+    .container2:hover .box{
+      transform: rotate(50deg);
+    }
+    .container3:hover .box{
+      transform: skew(10deg, 10deg);
+    }
+    .container4:hover .box{
+      transform-origin: right bottom;
+      transform: rotate(360deg);
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+    }
+    .box1 {
+      background:yellow;
+      transition: transform 0.5s;
+
+    }
+
+    .box2 {
+      background:blue;
+      transition: transform 1s;
+
+
+    }
+    .box3 {
+      background:red;
+      transition: transform 1.5s;
+
+      
+    }
+  </style>
+</head>
+<body>
+  <div class="container1">
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+  </div>
+  <div class="container2">
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+  </div>
+  <div class="container3">
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+  </div>
+  <div class="container4">
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+  </div>
+</body>
+</html>
